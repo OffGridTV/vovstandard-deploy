@@ -1,0 +1,209 @@
+@import url('/websites/vovverified/style.css');
+
+.landing {
+    min-height: 100vh;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 44px 20px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+body {
+    background:
+        radial-gradient(circle at 95% 4%, rgba(22, 163, 74, 0.14), transparent 34%),
+        radial-gradient(circle at 5% 22%, rgba(21, 128, 61, 0.12), transparent 30%),
+        #ffffff;
+}
+
+.hero,
+.why,
+.pillars,
+.trust,
+.relationship,
+.actions,
+.utility {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #dcfce7;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 10px 28px rgba(22, 163, 74, 0.08);
+}
+
+.hero {
+    text-align: center;
+}
+
+.kicker {
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    font-weight: 700;
+    color: #166534;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 62px);
+    line-height: 1.03;
+    letter-spacing: -1.1px;
+    margin-bottom: 12px;
+}
+
+.tagline {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: clamp(17px, 2vw, 23px);
+    color: #374151;
+}
+
+h2 {
+    font-size: clamp(22px, 3.2vw, 30px);
+    line-height: 1.15;
+    margin-bottom: 10px;
+    letter-spacing: -0.4px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+p,
+li,
+a {
+    font-size: 16px;
+}
+
+.why p + p {
+    margin-top: 8px;
+}
+
+.pillar-grid {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.pillar-card {
+    border: 1px solid #dcfce7;
+    border-radius: 12px;
+    padding: 16px;
+    background: #f8fff9;
+}
+
+.trust ul {
+    margin-top: 8px;
+    padding-left: 20px;
+    color: #1f2937;
+}
+
+.trust li + li {
+    margin-top: 6px;
+}
+
+.relationship-copy {
+    margin-bottom: 12px;
+}
+
+.flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    color: #1f2937;
+}
+
+.flow span {
+    border: 1px solid #bbf7d0;
+    border-radius: 999px;
+    padding: 7px 11px;
+    background: #f0fdf4;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.flow .arrow {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    color: #15803d;
+}
+
+.actions .btn {
+    width: min(420px, 100%);
+    transition: none;
+    transform: none;
+}
+
+.actions .btn:hover {
+    transition: none;
+    transform: none;
+}
+
+.utility-links {
+    display: grid;
+    gap: 8px;
+}
+
+.utility-links a {
+    color: #166534;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.utility-links a:hover {
+    text-decoration: underline;
+}
+
+.site-linkback {
+    text-align: center;
+}
+
+.site-linkback a {
+    color: #166534;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-linkback a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .landing {
+        padding: 24px 14px 38px;
+        gap: 14px;
+    }
+
+    .hero,
+    .why,
+    .pillars,
+    .trust,
+    .relationship,
+    .actions,
+    .utility {
+        padding: 16px;
+    }
+
+    .pillar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flow {
+        gap: 6px;
+    }
+
+    .flow .arrow {
+        width: 100%;
+        text-align: center;
+    }
+
+    p,
+    li,
+    a {
+        font-size: 15px;
+    }
+}
