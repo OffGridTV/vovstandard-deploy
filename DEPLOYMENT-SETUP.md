@@ -1,4 +1,4 @@
-# VOV Standard Deployment Setup
+# The VOV Standard Deployment Setup
 
 This setup separates `vovstandard.com` from VOV Verified ownership.
 
@@ -38,7 +38,7 @@ In `VOV-ecosystem` repository settings:
 
 ## 5) Deploy
 
-Run workflow: `Publish VOV Standard Deploy Repo`
+Run the `Deploy VOV Standard` workflow for The VOV Standard site.
 
 Result:
 
@@ -52,5 +52,7 @@ Confirm files in root of deploy repository:
 
 - `index.html`
 - `style.css`
+- `assets/EVAI Logo.svg`
+- `assets/VOV landing page image 7-26.png`
 - `CNAME` with value `vovstandard.com`
 - `.nojekyll`
