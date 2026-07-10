@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>VOV Standard | Investigation Methodology and Evidence Rules</title>
     <meta name="description" content="VOV Standard publishes the investigation methodology, evidence standards, and governance rules behind every VOV Verified conclusion.">
     <meta name="robots" content="index,follow">
@@ -21,7 +24,24 @@
     <meta name="twitter:title" content="VOV Standard | Investigation Methodology and Evidence Rules">
     <meta name="twitter:description" content="Published methodology, evidence requirements, and governance rules for independent investigations.">
     <meta name="twitter:image" content="https://vovstandard.com/assets/VOV%20landing%20page%20image%207-26.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260709c">
+    <script>
+        (function forceFreshHtmlOncePerTab() {
+            try {
+                if (sessionStorage.getItem('evai-fresh-load') === '1') {
+                    return;
+                }
+                sessionStorage.setItem('evai-fresh-load', '1');
+                var url = new URL(window.location.href);
+                if (!url.searchParams.has('v')) {
+                    url.searchParams.set('v', String(Date.now()));
+                    window.location.replace(url.toString());
+                }
+            } catch (e) {
+                // Ignore storage or URL parsing issues and continue normal load.
+            }
+        })();
+    </script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -67,7 +87,20 @@
     </script>
 </head>
 <body>
-    <main class="landing" aria-label="VOV Standard landing page">
+    <div class="page-shell">
+        <header class="ecosystem-top" aria-label="EVAI ecosystem masthead">
+            <div class="ecosystem-top-bar">
+                <a class="ecosystem-chip ecosystem-chip-active" href="https://vovstandard.com/">VOV STANDARD</a>
+                <a class="ecosystem-chip" href="https://vovverified.com/">VOV VERIFIED</a>
+                <a class="ecosystem-chip" href="https://offgridtv.com/">OFF GRID TV</a>
+            </div>
+            <img class="bookend-logo" src="../../assets/EVAI%20Logo.svg" alt="EVAI logo" width="220" height="82" decoding="async">
+            <p class="ecosystem-overline">THE EVIDENCE ECOSYSTEM</p>
+            <p class="ecosystem-title">QUESTIONS • EVIDENCE • CONCLUSIONS</p>
+            <p class="ecosystem-subtitle">METHODS • GOVERNANCE • <span>PUBLIC RECORD</span></p>
+        </header>
+
+        <main class="landing" aria-label="VOV Standard landing page">
         <section class="hero">
             <p class="kicker">VOV STANDARD</p>
             <h1>THE RULES BEHIND THE RESULTS.</h1>
@@ -160,9 +193,22 @@
             </div>
         </section>
 
-        <div class="site-linkback">
-            <a href="https://vovverified.com/">vovverified.com</a>
-        </div>
-    </main>
+            <div class="site-linkback">
+                <a href="https://vovverified.com/">vovverified.com</a>
+            </div>
+        </main>
+
+        <footer class="ecosystem-footer-new" aria-label="EVAI ecosystem closing signature">
+            <img class="bookend-logo" src="../../assets/EVAI%20Logo.svg" alt="EVAI logo" width="220" height="82" decoding="async">
+            <p class="ecosystem-overline">THE EVIDENCE ECOSYSTEM</p>
+            <p class="ecosystem-title">A PUBLIC STANDARD FOR PUBLIC TRUST</p>
+            <div class="ecosystem-link-row">
+                <a href="https://vovstandard.com/">VOV STANDARD</a>
+                <a href="https://vovverified.com/">VOV VERIFIED</a>
+                <a href="https://offgridtv.com/">OFF GRID TV</a>
+            </div>
+            <p class="footer-copyright">© 2026 EVAI</p>
+        </footer>
+    </div>
 </body>
 </html>
