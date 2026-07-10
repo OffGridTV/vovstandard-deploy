@@ -117,8 +117,8 @@ body {
 }
 
 .ecosystem-footer-new {
-    margin-top: 22px;
-    padding: 28px;
+    margin-top: 16px;
+    padding: 22px;
     text-align: center;
     background: rgba(255, 255, 255, 0.92);
     border: 1px solid #dcfce7;
@@ -126,12 +126,22 @@ body {
     box-shadow: 0 10px 28px rgba(22, 163, 74, 0.08);
 }
 
+.ecosystem-footer-new .bookend-logo {
+    width: clamp(116px, 12.5vw, 170px);
+    margin-bottom: 8px;
+}
+
+.ecosystem-footer-new .ecosystem-overline {
+    margin-top: 4px;
+    font-size: 0.68rem;
+}
+
 .ecosystem-link-row {
-    margin-top: 12px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px 16px;
+    gap: 9px 13px;
 }
 
 .ecosystem-link-row a {
@@ -139,7 +149,7 @@ body {
     color: #166534;
     font-weight: 700;
     letter-spacing: 0.08em;
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
 }
 
@@ -148,8 +158,8 @@ body {
 }
 
 .footer-copyright {
-    margin-top: 12px;
-    font-size: 0.82rem;
+    margin-top: 10px;
+    font-size: 0.79rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #171717;
