@@ -16,9 +16,9 @@ Use these DNS records:
 - `@` AAAA -> `2606:50c0:8001::153`
 - `@` AAAA -> `2606:50c0:8002::153`
 - `@` AAAA -> `2606:50c0:8003::153`
-- `www` CNAME -> `vovstandard.com`
+- `www` CNAME -> `offgridtv.github.io`
 
-Do not point `www` to `offgridtv.github.io` for this setup. That can leave `www.vovstandard.com` on a default `*.github.io` certificate and cause HTTPS principal mismatch errors.
+For GitHub Pages, do not point `www` at the apex domain. Point `www` to the Pages host (`offgridtv.github.io`) so GitHub can provision and serve the correct certificate for `www.vovstandard.com`.
 
 ## 1) Create deploy repository
 
@@ -78,7 +78,7 @@ Expected:
 - `https://vovstandard.com/` returns `200 OK`
 - `https://www.vovstandard.com/` returns `301` to `https://vovstandard.com/` without TLS/certificate errors
 
-If `www` fails TLS validation, fix DNS first (`www` CNAME -> `vovstandard.com`) and then re-check GitHub Pages "Enforce HTTPS".
+If `www` fails TLS validation, fix DNS first (`www` CNAME -> `offgridtv.github.io`) and then re-check GitHub Pages "Enforce HTTPS".
 
 ## 7) Verify artifact content in vovstandard-deploy
 
